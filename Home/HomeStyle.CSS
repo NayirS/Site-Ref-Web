@@ -13,7 +13,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 10px 50px; 
+    padding: 10px 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,16 +23,14 @@ nav {
     z-index: 1000;
 }
 
-
 nav .logo img {
-    height: 40px; 
+    height: 40px;
     width: auto;
 }
 
-
 nav ul {
     display: flex;
-    gap: 30px; 
+    gap: 30px;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -44,8 +42,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 18px; 
-    color: #3a6b35; 
+    font-size: 18px;
+    color: #396e34;
     font-weight: 600;
     padding: 10px 15px;
     border-radius: 20px;
@@ -77,7 +75,6 @@ nav ul li a:hover {
     z-index: -1;
     filter: brightness(70%);
 }
-
 
 .Style {
     font-size: 48px;
@@ -162,4 +159,121 @@ nav ul li a:hover {
     font-size: 16px;
     color: #555;
     line-height: 1.6;
+}
+
+
+@media (max-width: 1024px) {
+
+    nav {
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+
+    .presentation {
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 5%;
+    }
+
+    .presentation img {
+        width: 80%;
+        max-width: 350px;
+        margin-top: 20px;
+    }
+
+    .presentation h2 {
+        font-size: 28px;
+    }
+
+    .presentation p {
+        font-size: 16px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Présentation */
+    .presentation {
+        padding: 50px 5%;
+    }
+
+    .presentation img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Ajustement des services */
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .service-item img {
+        width: 80%;
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .service-description {
+        padding-left: 0;
+        max-width: 100%;
+    }
+
+    .service-description h3 {
+        font-size: 20px;
+    }
+
+    .service-description p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px;
+    }
+
+    .presentation h2 {
+        font-size: 24px;
+    }
+
+    .presentation p {
+        font-size: 14px;
+    }
+
+    .service-item img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .service-description h3 {
+        font-size: 18px;
+    }
+
+    .service-description p {
+        font-size: 12px;
+    }
 }
