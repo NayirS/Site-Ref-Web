@@ -1,5 +1,4 @@
-/* ============================= */
-/* Styles généraux */
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -8,8 +7,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ============================= */
-/* Navigation */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -57,8 +55,7 @@ nav ul li a:hover {
     color: white;
 }
 
-/* ============================= */
-/* Image de fond */
+
 .ImageFond {
     position: relative;
     width: 100%;
@@ -85,8 +82,7 @@ nav ul li a:hover {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
 
-/* ============================= */
-/* Section Services */
+
 .service {
     padding: 50px 10%;
     background-color: #f5f5f5;
@@ -133,10 +129,8 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-/* ============================= */
-/* Responsive Design */
+
 @media (max-width: 1024px) {
-    /* Ajustement de la navigation */
     nav {
         padding: 10px 20px;
     }
