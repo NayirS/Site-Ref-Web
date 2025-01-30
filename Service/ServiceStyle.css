@@ -1,4 +1,5 @@
-
+/* ============================= */
+/* Styles généraux */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -7,7 +8,8 @@ body {
     overflow-x: hidden;
 }
 
-
+/* ============================= */
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -23,16 +25,14 @@ nav {
     z-index: 1000;
 }
 
-
 nav .logo img {
-    height: 40px; 
+    height: 40px;
     width: auto;
 }
 
-
 nav ul {
     display: flex;
-    gap: 30px; 
+    gap: 30px;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -44,8 +44,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 18px; 
-    color: #3a6b35; 
+    font-size: 18px;
+    color: #3a6b35;
     font-weight: 600;
     padding: 10px 15px;
     border-radius: 20px;
@@ -57,11 +57,12 @@ nav ul li a:hover {
     color: white;
 }
 
-
+/* ============================= */
+/* Image de fond */
 .ImageFond {
     position: relative;
     width: 100%;
-    height: 60vh; 
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,14 +79,14 @@ nav ul li a:hover {
     filter: brightness(70%);
 }
 
-
 .Style {
     font-size: 48px;
     font-family: 'Merriweather', serif;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
 }
 
-
+/* ============================= */
+/* Section Services */
 .service {
     padding: 50px 10%;
     background-color: #f5f5f5;
@@ -97,7 +98,6 @@ nav ul li a:hover {
     text-align: center;
     margin-bottom: 50px;
 }
-
 
 .service-item {
     display: flex;
@@ -133,8 +133,98 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
+/* ============================= */
+/* Responsive Design */
+@media (max-width: 1024px) {
+    /* Ajustement de la navigation */
+    nav {
+        padding: 10px 20px;
+    }
 
-.service {
-    padding: 50px 10%;
-    background-color: #f5f5f5;
+    nav ul {
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    /* Réduction de l'image de fond */
+    .ImageFond {
+        height: 50vh;
+    }
+
+    .Style {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navigation en colonne */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Ajustement des services */
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .service-item img {
+        width: 80%;
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .service-description {
+        padding-left: 0;
+        max-width: 100%;
+    }
+
+    .service-description h3 {
+        font-size: 20px;
+    }
+
+    .service-description p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Réduction encore plus sur mobile */
+    nav {
+        padding: 10px;
+    }
+
+    .ImageFond {
+        height: 40vh;
+    }
+
+    .Style {
+        font-size: 28px;
+    }
+
+    .service-item img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .service-description h3 {
+        font-size: 18px;
+    }
+
+    .service-description p {
+        font-size: 12px;
+    }
 }
